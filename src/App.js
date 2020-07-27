@@ -5,10 +5,12 @@ import GithubReposeDataFetch from './githubReposeDataFetch';
 
 function App() {
   return (
-    <div className="App">
-      <h3>Use Api for Data GET, POST, DELETE, UPDATE METHODS <br/>etc</h3><hr/>
-      <ApiMethods />
-      <GithubReposeDataFetch />
+    <div className="container">
+      <div className="App">
+        <h3>Use Api for Data GET, POST, DELETE, UPDATE METHODS <br/>etc</h3><hr/>
+        <ApiMethods />
+        <GithubReposeDataFetch />
+      </div>
     </div>
   );
 }

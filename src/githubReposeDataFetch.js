@@ -15,7 +15,7 @@ const [githubDate, setGithubDate] = useState([])
 
 useEffect(() => {
     getApiGithubDATA()
-}, [])
+},[])
 
     return (
         <div>
