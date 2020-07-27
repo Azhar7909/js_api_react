@@ -3,10 +3,11 @@ import React, { useEffect, useState } from 'react'
 export default function ApiMethods() {
 //  STATE GET API
     const [getData, setGetData] = useState({})
+//  STATE POST API
     const [postData, setGPostData] = useState({})
 
 
-//  GET API
+//  DEAL TO GET API
     async function getApi() {
         const Api = await fetch('https://jsonplaceholder.typicode.com/todos/1')
         console.log(Api,"API")
@@ -16,7 +17,7 @@ export default function ApiMethods() {
     }
 // end
     
-//  POST API
+//  DEAL TO POST API
     async function postApi() {
         const Api = await fetch('https://jsonplaceholder.typicode.com/posts',{
             method:'POST',
@@ -42,8 +43,7 @@ export default function ApiMethods() {
 
         console.log("POST API CALL");
         postApi();
-        return () => {
-        }
+       
     }, [])
 
 
