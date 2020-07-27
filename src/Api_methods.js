@@ -49,15 +49,15 @@ export default function ApiMethods() {
 
     return (
         <div>
-            <h5>GET DATA</h5>
+            <h5>GET DATA</h5><hr/>
             <p>USER ID <br/> {getData.userId}</p>
-            <p>TITLE <br/> {getData.title}</p>
+            <p>TITLE <br/> {getData.title}</p><hr/>
 
             
-            <h5>POST DATA</h5>
+            <h5>POST DATA</h5><hr/>
             <p>USER ID <br/> {postData.userId}</p>
             <p>TITLE <br/> {postData.title}</p>
-            <p>BODY <br/> {postData.body}</p>
+            <p>BODY <br/> {postData.body}</p><hr/><hr/><hr/><hr/>
         </div>
     )
 }

@@ -20,15 +20,19 @@ useEffect(() => {
     return (
         <div>
             <h5>GET DATA FROM Github Repose</h5>
-            <ol>
+            <hr/><br/>
+            <div>
                 { githubDate.length !== 0 ? 
                     githubDate.map((val, ind)=>(
-                        <li key={ind}>
-                            {val.name}
-                        </li>
+                        <div key={ind}>
+                            {ind+1} <br/>
+                           ID: <br/> {val.id} <br/><br/>
+                           CREATED AT: <br/> {val.created_at} <br/><br/>
+                           NAME: <br/> {val.name}<br/><hr/><br/>
+                        </div>
                     )) : "No Data Found"
                 }
-            </ol>
+            </div>
         </div>
     )
 }
